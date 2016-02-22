@@ -13,5 +13,6 @@ COPY ./scripts/ /
 
 ENTRYPOINT ["/bin/sh", "-c"]
 EXPOSE 80
+VOLUME /certs
 
 CMD ["/run_cron.sh"]
