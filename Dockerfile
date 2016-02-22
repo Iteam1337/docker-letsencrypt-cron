@@ -12,5 +12,6 @@ RUN chmod 0644 /etc/cron.d/crontab
 COPY ./scripts/ /
 
 ENTRYPOINT ["/bin/sh", "-c"]
+EXPOSE 80
 
 CMD ["/run_cron.sh"]
